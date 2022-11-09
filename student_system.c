@@ -14,7 +14,6 @@ double gpa(int arr[],int size);
 int main(int argc, char const *argv[]){
     char username[50];
     int password,choice,i,j;
-    int exit=0;
     int math[3] = {100,70,55},
         algeb[3] = {10,95,50},
         prog[3] = {45,80,90},
@@ -29,7 +28,7 @@ int main(int argc, char const *argv[]){
         
     if(strcmp(username,"ery") == 0 && password == 123){
         printf("Login succesful.\n");
-        while(exit == 0){
+        while(1){
             printf("\n------------------Select Your Process------------------\n1-Lessons\n2-Lessons Notes\n3-Calculate GPA\n4-Exit\nChoice : ");
             scanf("%d",&choice);
             switch (choice){
@@ -109,10 +108,3 @@ double lesson_gpa(int arr[]){
     double result = thirty_percent(arr[0]) + thirty_percent(arr[1]) + fourty_percent(arr[2]);
     return result;
 }
-/*double gpa(int arr[],int size){
-    int i;
-    double result_gpa=0;
-    for(i=0 ; i<size ; i++){
-        result_gpa += lesson_gpa(arr[i]);
-    }return result_gpa/4;
-}*/
