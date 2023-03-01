@@ -9,7 +9,7 @@ double fourty_percent(double x);
 double lesson_gpa(int arr[]);
 double gpa(int arr[],int size);
 
-
+//rastgele kod
 
 int main(int argc, char const *argv[]){
     char username[50];
